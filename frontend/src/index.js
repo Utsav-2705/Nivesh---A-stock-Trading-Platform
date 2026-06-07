@@ -14,7 +14,7 @@ import PricingPage from './landing_page/pricing/PricingPage';
 import SupportPage from './landing_page/support/SupportPage';
 import Footer from './landing_page/Footer';
 import NotFound from './landing_page/NotFound';
-import SignupPage from './landing_page/signup/SignupPage';
+/*import SignupPage from './landing_page/signup/SignupPage';*/
 import Login from './landing_page/signup/Login';
 import Home from './landing_page/signup/Home';
 import SignUp from './landing_page/signup/SignUp';
