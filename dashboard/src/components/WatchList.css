@@ -1,0 +1,166 @@
+/* MAIN CONTAINER */
+.watchlist-container {
+  background: #0b1220;
+  height: 100%;
+  padding: 16px;
+  color: #e5e7eb;
+  font-family: "Inter", sans-serif;
+}
+
+/* SEARCH BAR */
+.search-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #111827;
+  padding: 10px 12px;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #1f2937;
+}
+
+.search {
+  width: 70%;
+  background: transparent;
+  border: none;
+  outline: none;
+  color: #e5e7eb;
+  font-size: 14px;
+}
+
+.search::placeholder {
+  color: #6b7280;
+}
+
+.counts {
+  font-size: 12px;
+  color: #9ca3af;
+}
+
+/* LIST */
+.list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* WATCHLIST ITEM */
+.list li {
+  background: #111827;
+  margin-bottom: 10px;
+  padding: 12px 14px;
+  border-radius: 12px;
+  transition: all 0.25s ease;
+  border: 1px solid transparent;
+  position: relative;
+}
+
+.list li:hover {
+  transform: translateY(-2px);
+  border: 1px solid #1d4ed8;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+}
+
+/* ITEM ROW */
+.item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* STOCK NAME */
+.item p {
+  font-size: 15px;
+  font-weight: 600;
+  margin: 0;
+  letter-spacing: 0.3px;
+}
+
+.item p.up {
+  color: #22c55e;
+}
+
+.item p.down {
+  color: #ef4444;
+}
+
+/* PRICE SECTION */
+.itemInfo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.percent {
+  font-size: 12px;
+  color: #9ca3af;
+}
+
+/* ICONS */
+.down {
+  color: #ef4444;
+}
+
+.up {
+  color: #22c55e;
+}
+
+.price {
+  font-weight: 600;
+  color: #e5e7eb;
+}
+
+/* ACTIONS POPUP */
+.actions {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+ /* background: #0f172a;*/
+  padding: 6px;
+  border-radius: 10px;
+  display: flex;
+  gap: 6px;
+  border: 1px solid #1f2937;
+}
+
+/* BUTTONS */
+.actions button {
+  border: none;
+  padding: 6px 8px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 12px;
+  transition: 0.2s;
+}
+
+/* BUY */
+.buy {
+  background: #16a34a;
+  color: white;
+}
+
+.buy:hover {
+  background: #22c55e;
+}
+
+/* SELL */
+.sell {
+  background: #dc2626;
+  color: white;
+}
+
+.sell:hover {
+  background: #ef4444;
+}
+
+/* ICON BUTTON */
+.action {
+  background: #1f2937;
+  color: #e5e7eb;
+}
+
+.action:hover {
+  background: #374151;
+}
+

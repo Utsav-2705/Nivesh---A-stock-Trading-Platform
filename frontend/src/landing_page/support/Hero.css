@@ -1,0 +1,49 @@
+.support-hero {
+  background: linear-gradient(135deg, #0f172a,#080c14);
+  color: white;
+  padding: 80px 0;
+}
+
+.hero-title {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.hero-subtitle {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #cbd5e1;
+}
+
+.search-box input {
+  height: 55px;
+  border-radius: 12px;
+  border: none;
+  padding: 0 20px;
+  font-size: 1rem;
+}
+
+.support-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.support-links a {
+  text-decoration: none;
+  color: #60a5fa;
+  font-weight: 500;
+}
+
+.support-links a:hover {
+  color: white;
+}
+
+.hero-image {
+  max-width: 500px;
+}
+
+.min-vh-50 {
+  min-height: 60vh;
+}

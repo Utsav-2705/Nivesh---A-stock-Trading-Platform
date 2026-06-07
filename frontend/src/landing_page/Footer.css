@@ -1,0 +1,73 @@
+.footer-card {
+  background: #fff;
+  padding: 25px;
+  border-radius: 20px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+}
+
+.icon {
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+.green {
+  color: #22c55e;
+}
+
+.blue {
+  color: #2563eb;
+}
+
+.purple {
+  color: #8b5cf6;
+}
+
+.orange {
+  color: #f59e0b;
+}
+
+.cyan {
+  color: #06b6d4;
+}
+
+.plant-icon {
+  font-size: 60px;
+}
+
+.bottom-footer {
+  background: linear-gradient(
+    90deg,
+   /* #021b49,
+    #03285e,
+    #021b49*/
+    #080c14
+  );
+
+  color: white;
+  padding: 30px;
+  border-radius: 20px;
+}
+
+.shield-circle {
+  background: #22c55e;
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 22px;
+}
+
+.footer-small-icon {
+  font-size: 22px;
+  margin-bottom: 8px;
+}
+
+.green-text {
+  color: #22c55e;
+}
+
+.cyan-text {
+  color: #06b6d4;
+}

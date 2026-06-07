@@ -1,0 +1,107 @@
+/* MAIN SIDEBAR */
+.menu-container {
+  width: 220px;
+  height: 100vh;
+  background: #0b1220;
+  color: #e5e7eb;
+  display: flex;
+  flex-direction: column;
+  padding: 16px 10px;
+  border-right: 1px solid #1f2937;
+  font-family: "Inter", sans-serif;
+}
+
+/* LOGO */
+.menu-container img {
+  width: 48px;
+  margin: 10px auto 20px auto;
+  filter: drop-shadow(0 0 6px rgba(59, 130, 246, 0.4));
+}
+
+/* MENU LIST */
+.menus ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* MENU ITEM */
+.menus ul li {
+  margin-bottom: 6px;
+}
+
+/* DEFAULT MENU TEXT */
+.menu {
+  padding: 10px 12px;
+  border-radius: 10px;
+  font-size: 14px;
+  color: #9ca3af;
+  transition: all 0.25s ease;
+  cursor: pointer;
+}
+
+/* HOVER EFFECT */
+.menu:hover {
+  background: #111827;
+  color: #e5e7eb;
+  transform: translateX(4px);
+}
+
+/* ACTIVE MENU */
+.menu.selected {
+  background: linear-gradient(90deg, #1d4ed8, #2563eb);
+  color: white;
+  font-weight: 600;
+  box-shadow: 0 4px 12px rgba(37, 99, 235, 0.3);
+}
+
+/* HR DIVIDER */
+hr {
+  border: none;
+  height: 1px;
+  background: #1f2937;
+  margin: 15px 0;
+}
+
+/* PROFILE SECTION */
+.profile {
+  margin-top: auto;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px;
+  background: #111827;
+  border-radius: 12px;
+  border: 1px solid #1f2937;
+}
+
+/* AVATAR */
+.avatar {
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #2563eb, #1d4ed8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  color: white;
+  font-size: 12px;
+}
+
+/* USERNAME */
+.username {
+  font-size: 13px;
+  color: #d1d5db;
+  margin: 0;
+}
+
+/* SCROLL CLEAN (optional) */
+.menu-container::-webkit-scrollbar {
+  width: 4px;
+}
+
+.menu-container::-webkit-scrollbar-thumb {
+  background: #1f2937;
+  border-radius: 10px;
+}
