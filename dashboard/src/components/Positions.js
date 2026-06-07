@@ -64,8 +64,14 @@ const fmtINR = (n) =>
   Number(n).toLocaleString("en-IN", { minimumFractionDigits: 2, maximumFractionDigits: 2 });
 
 // Current time string 
-  new Date().toLocaleTimeString("en-IN", { hour: "2-digit", minute: "2-digit", second: "2-digit" });
-
+  //new Date().toLocaleTimeString("en-IN", { hour: "2-digit", minute: "2-digit", second: "2-digit" });
+// Current time string
+const getTime = () =>
+  new Date().toLocaleTimeString("en-IN", {
+    hour: "2-digit",
+    minute: "2-digit",
+    second: "2-digit",
+  });
 // Product badge variant 
 const getProductClass = (product = "") => {
   const p = product.toUpperCase();
@@ -181,7 +187,7 @@ const Positions = () => {
     setTimeout(() => setLoading(false), 900);
   };
 
-  
+    return (
     <div className="pos-root">
 
       {/*HEADER*/}
@@ -191,7 +197,7 @@ const Positions = () => {
           <div>
             <div className="pos-title">Open Positions</div>
             {/* live count in subtitle */}
-            <div className="pos-subtitle">
+           <div className="pos-subtitle">
               {positions.length} POSITIONS · INTRADAY / DELIVERY
             </div>
           </div>
@@ -382,7 +388,7 @@ const Positions = () => {
                 )}
  
                 {!loading && displayed.map((stock, index) => {
-                  // ── ORIGINAL calculations — preserved exactly ─
+                  
                   const curValue  = stock.price * stock.qty;
                   const isProfit  = curValue - stock.avg * stock.qty >= 0.0;
                   const profClass = isProfit ? "profit" : "loss";
@@ -549,10 +555,10 @@ const Positions = () => {
 
           </div>
         </div>
-      )}
-);
+     )}
+
     </div>
    
-};
+)};
 
 export default Positions;
