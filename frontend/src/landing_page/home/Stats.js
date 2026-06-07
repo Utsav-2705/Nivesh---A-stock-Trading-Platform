@@ -19,7 +19,7 @@ function Stats() {
 
 
                 </div>
-                <div className='col-6 p-5'> <img src='media/AlgoTrading.png' style={{ width: "125%" }} />
+                <div className='col-6 p-5'> <img src='media/AlgoTrading.png' alt="" style={{ width: "125%" }} />
 
 
                 {/*<div className='text-center'>

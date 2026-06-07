@@ -8,7 +8,7 @@ function Developer() {
             </div>
             <div className='row p-5   text-muted ' style={{ lineHeight: "1.8", fontSize: "1.2em" }}>
                 <div className='col-6 p-5 text-center '>
-                     <img src='media/utsav.jpeg' style={{borderRadius:"100%", width:"50%"}}></img>
+                     <img src='media/utsav.jpeg'alt="" style={{borderRadius:"100%", width:"50%"}}></img>
                      <h4 className='mt-5'>Utsav Srivastava</h4>
                      <h6>Developer</h6>
                 </div>
@@ -19,7 +19,7 @@ function Developer() {
 <p>Focused on transforming ideas into impactful digital
     products while continuously learning and improving
     technical expertise through hands-on projects.</p>
-<p>Conncet on <a href=''>Linkedin</a></p>
+ 
                 </div>
             </div>
 

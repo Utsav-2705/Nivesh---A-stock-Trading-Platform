@@ -1,11 +1,11 @@
-import React from 'react';
+/*import React from 'react';
 
 function Brokrage() {
     return ( 
        <div className='container'>
         <div className='row p-5 mt-5 text-center border-top'>
            <div className='col-8 p-4'>
-             <a href=''style={{textDecoration:"none"}}> 
+             <a href='/orders'style={{textDecoration:"none"}}> 
                  <h3 className='fs-5'>Brokerage Calculator</h3> 
              </a> 
 
@@ -27,4 +27,4 @@ function Brokrage() {
      );
 }
 
-export default Brokrage;
+export default Brokrage;*/

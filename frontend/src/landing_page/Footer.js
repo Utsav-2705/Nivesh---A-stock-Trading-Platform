@@ -1,10 +1,9 @@
 import React from "react";
 import {
   FaShieldAlt,
-  FaHandshake,
-  FaLightbulb,
-  FaUsers,
-  FaUserTie,
+   
+   
+  
   FaUniversity,
   FaLock,
   FaHeadset,

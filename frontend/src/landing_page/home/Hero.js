@@ -5,7 +5,7 @@ function Hero() {
     return (  
         <div className='container p-5 mb-5'>
             <div className='row text-center'>
-                 <img src='media/homeHero.png' alt='Hero Image' className='mb-5'style={{ width: "90%", display: "block", margin: "0 auto" }}/>
+                 <img src='media/homeHero.png' alt='Stock trading dashboard' className='mb-5'style={{ width: "90%", display: "block", margin: "0 auto" }}/>
                 <h1 className='mt-5'>Invest in everything</h1>
                 <p>Online Platform to invest in stocks , derivatives, mutual funds, and  more</p>
           <Link to="/signup">
