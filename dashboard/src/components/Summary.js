@@ -146,7 +146,7 @@ const Summary = () => {
     const verifyUser = async () => {
       try {
         const { data } = await axios.post(
-          "http://localhost:3002/verify",
+          "https://nivesh-a-stock-trading-platform.onrender.com/verify",
           {},
           { withCredentials: true }
         );

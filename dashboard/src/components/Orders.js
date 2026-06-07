@@ -173,7 +173,7 @@ const Orders = () => {
   const fetchOrders = async () => {
     try {
       setLoading(true);
-      const response = await axios.get("http://localhost:3002/orders"); // ← ORIGINAL API CALL
+      const response = await axios.get("https://nivesh-a-stock-trading-platform.onrender.com/orders"); // ← ORIGINAL API CALL
       setOrders(response.data);                                          // ← ORIGINAL SET
     } catch (error) {
       console.log(error);                                                // ← ORIGINAL ERROR LOG

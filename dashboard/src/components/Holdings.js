@@ -40,7 +40,7 @@ const Holdings = () => {
 
    
   useEffect(() => {
-    axios.get("http://localhost:3002/allHoldings").then((res) => {
+    axios.get("https://nivesh-a-stock-trading-platform.onrender.com/allHoldings").then((res) => {
       setAllHoldings(res.data);
       setLoading(false);
       setLastUpdated(getTime());
@@ -62,7 +62,7 @@ const Holdings = () => {
    
   const handleRefresh = () => {
     setLoading(true);
-    axios.get("http://localhost:3002/allHoldings").then((res) => {
+    axios.get("https://nivesh-a-stock-trading-platform.onrender.com/allHoldings").then((res) => {
       setAllHoldings(res.data);
       setLoading(false);
       setLastUpdated(getTime());

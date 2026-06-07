@@ -14,7 +14,7 @@ const Home = () => {
         navigate("/login");
       }
       const { data } = await axios.post(
-        "http://localhost:3002/verify",
+        "https://nivesh-a-stock-trading-platform.onrender.com/verify",     //http://localhost:3002
         {},
         { withCredentials: true }
       );

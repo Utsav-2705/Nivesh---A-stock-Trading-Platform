@@ -72,7 +72,7 @@ const BuyActionWindow = ({ uid }) => {
     setIsLoading(true);
 
     
-    axios.post("http://localhost:3002/newOrder", {
+    axios.post("https://nivesh-a-stock-trading-platform.onrender.com/newOrder", {
       name: uid,
       qty:  stockQuantity,
       price: stockPrice,
