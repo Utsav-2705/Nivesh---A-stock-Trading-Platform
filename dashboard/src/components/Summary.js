@@ -155,8 +155,8 @@ const Summary = () => {
           setUsername(data.user);
         } else {
          /* window.location.href = "http://localhost:3000";*/
-        if (!window.location.href.includes("localhost:3000")) {
-          window.location.href = "http://localhost:3000";
+        if (!window.location.href.includes("https://nivesh-a-stock-trading-platform-uac.vercel.app/")) {
+          window.location.href = "https://nivesh-a-stock-trading-platform-uac.vercel.app/";
         }
        
        

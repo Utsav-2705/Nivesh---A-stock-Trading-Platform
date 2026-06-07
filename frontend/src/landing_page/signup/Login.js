@@ -43,7 +43,7 @@ const Login = () => {
   handleSuccess(message);
 
   setTimeout(() => {
-    window.location.href = "http://localhost:3000";
+    window.location.href = "https://nivesh-a-stock-trading-platform-uac.vercel.app/"           //"http://localhost:3000";
   }, 1000);
 }else {
         handleError(message);
