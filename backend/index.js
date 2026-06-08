@@ -31,7 +31,7 @@ app.use(
   })
 );
 
-app.options("*", cors()); 
+
 
 app.use(cookieParser());
 app.use(bodyParser.json());
@@ -105,7 +105,7 @@ app.get("/orders", async (req, res) => {
   }
 });
 
-// 👇 YE NAYA ROUTE ADD KARO
+
 app.get("/orders", async (req, res) => {
   try {
     const orders = await OrdersModel.find({});
