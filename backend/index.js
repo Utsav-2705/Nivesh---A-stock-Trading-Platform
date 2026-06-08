@@ -23,7 +23,8 @@ const app = express();
 app.use(
   cors({
     origin: ["http://localhost:3000",
-      "http://localhost:3001"
+      "http://localhost:3001",
+     " https://nivesh-a-stock-trading-platform-uacf-lpenhp245.vercel.app/",
     ],
     methods: ["GET", "POST", "PUT", "DELETE"],
     credentials: true,
