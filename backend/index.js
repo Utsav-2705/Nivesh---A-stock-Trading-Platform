@@ -22,14 +22,16 @@ const app = express();
 // Middleware
 app.use(
   cors({
-    origin: ["http://localhost:3000",
-      "http://localhost:3001",
-     " https://nivesh-a-stock-trading-platform-uacf-lpenhp245.vercel.app/",
+    origin: [
+      "https://nivesh-a-stock-trading-platform.vercel.app",
+      "https://nivesh-a-stock-trading-platform-uacf-lpenhp245.vercel.app"
     ],
-    methods: ["GET", "POST", "PUT", "DELETE"],
+    methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
     credentials: true,
   })
 );
+
+app.options("*", cors()); 
 
 app.use(cookieParser());
 app.use(bodyParser.json());
