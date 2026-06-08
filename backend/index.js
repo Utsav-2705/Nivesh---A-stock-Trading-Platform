@@ -29,7 +29,7 @@ const app = express();
     methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
     credentials: true,
   })
-);*/}
+);
 app.use(
   cors({
     origin: [
@@ -39,6 +39,35 @@ app.use(
     ],
     methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
     credentials: true,
+  })
+);*/}
+
+
+
+const allowedOrigins = [
+  "https://nivesh-a-stock-trading-platform.vercel.app",
+];
+
+app.use(
+  cors({
+    origin: function (origin, callback) {
+      if (!origin) return callback(null, true);
+
+      if (allowedOrigins.includes(origin)) {
+        return callback(null, true);
+      }
+
+      if (
+        origin.endsWith(".vercel.app") &&
+        origin.includes("nivesh-a-stock-trading-platform")
+      ) {
+        return callback(null, true);
+      }
+
+      return callback(new Error("Not allowed by CORS"));
+    },
+    credentials: true,
+    methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
   })
 );
 
@@ -141,3 +170,9 @@ mongoose
   .catch((err) => {
     console.error("MongoDB connection error:", err);
   });
+
+
+
+
+
+  
