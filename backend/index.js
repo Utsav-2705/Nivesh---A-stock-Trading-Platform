@@ -20,11 +20,22 @@ const uri = process.env.MONGO_URL;
 const app = express();
 
 // Middleware
-app.use(
+{/*app.use(
   cors({
     origin: [
       "https://nivesh-a-stock-trading-platform.vercel.app",
       "https://nivesh-a-stock-trading-platform-uacf-lpenhp245.vercel.app"
+    ],
+    methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
+    credentials: true,
+  })
+);*/}
+app.use(
+  cors({
+    origin: [
+      "https://nivesh-a-stock-trading-platform.vercel.app",
+      "https://nivesh-a-stock-trading-platform-uacf-lpenhp245.vercel.app",
+      "https://nivesh-a-stock-trading-platform-bafd-mrwy427bz.vercel.app"
     ],
     methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
     credentials: true,
