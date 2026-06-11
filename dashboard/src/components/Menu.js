@@ -100,7 +100,7 @@ const Menu = () => {
          <li>
   <Link
     style={{ textDecoration: "none" }}
-    to="https://nivesh-a-stock-trading-platform-baf.vercel.app/login"
+    to="https://nivesh-a-stock-trading-platform.vercel.app/login"
   >
     <p className={menuClass}>Logout</p>
   </Link>
