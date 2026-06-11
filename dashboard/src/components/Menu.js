@@ -97,15 +97,14 @@ const Menu = () => {
             </Link>
           </li>
 
-          <li>
-            <p
-              className={menuClass}
-              onClick={handleLogout}
-              style={{ cursor: "pointer" }}
-            >
-              Logout
-            </p>
-          </li>
+         <li>
+  <Link
+    style={{ textDecoration: "none" }}
+    to="/login"
+  >
+    <p className={menuClass}>Logout</p>
+  </Link>
+</li>
         </ul>
       </div>
     </div>
